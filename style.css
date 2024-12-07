@@ -22,22 +22,19 @@ main::-webkit-scrollbar {
     display: none;
 }
 
-/* Header Styles */
-/* Header Styles */
 header {
-    background-color: #1A0129; /* Deep purple */
+    background-color: #1A0129; 
     padding: 20px;
     position: fixed;
     width: 100%;
     z-index: 10;
     top: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    border-bottom: 2px solid #3A025B; /* Muted border for structure */
-    transition: background-color 0.3s ease; /* Smooth background change on scroll */
-}
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #3A025B;
+    transition: background-color 0.3s ease;
 
-header:hover {
-    background-color: #220135; /* Slightly brighter purple on hover */
+header:hover {/
+    background-color: #220135;
 }
 
 nav ul {
