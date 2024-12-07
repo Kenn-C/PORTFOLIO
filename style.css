@@ -124,10 +124,9 @@ nav ul li a:hover::after {
         rgba(0, 89, 255, 0.779),
         rgb(200, 200, 200)
     );
-    animation: rgbEffect 7s infinite linear; /* Smooth gradient animation */
+    animation: rgbEffect 7s infinite linear; 
 }
 
-/* RGB Gradient Animation */
 @keyframes rgbEffect {
     0% {
         background-position: 0% 0%;
@@ -141,37 +140,33 @@ nav ul li a:hover::after {
 #home .intro .highlight-role {
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(112, 79, 245); /* Neutral light gray */
+    color: rgb(112, 79, 245); 
     background: linear-gradient(to right, #11001C, #3A025B);
     padding: 0.2em 0.5em;
     border-radius: 5px;
-    text-shadow: 1px 1px 2px #000; /* Subtle depth */
+    text-shadow: 1px 1px 2px #000;
 }
 
-/* Dynamic Role Container */
 #dynamic-role-container {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    height: 3.5 rem; /* Match the highlight-role height */
+    height: 3.5 rem; 
 }
 
-/* Dynamic Role Text */
 #dynamic-role {
     display: inline-block;
-    opacity: 0; /* Start hidden */
-    transition: opacity 0.5s ease-in-out; /* Smooth fade */
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
     font-size: 6rem;
     font-weight: bold;
-    color: #BFBFBF; /* Neutral light gray */
+    color: #BFBFBF;
     background: linear-gradient(to right, #8B5B29, #220135);
     padding: 0.2em 0.5em;
     border-radius: 3px;
-    text-shadow: 1px 1px 2px #000; /* Subtle depth */
+    text-shadow: 1px 1px 2px #000;
 }
 
-
-/* Fade and Slide Animation */
 @keyframes fadeSlideInOut {
     0%, 100% {
         opacity: 0;
@@ -183,14 +178,13 @@ nav ul li a:hover::after {
     }
 }
 
-/* Gradient Effect for Intro Text */
 #home .intro p span.gradient-text {
     display: inline-block;
     position: relative;
-    color: transparent; /* Text color is transparent */
-    background-clip: text; /* Clip gradient to text */
-    -webkit-background-clip: text; /* Safari compatibility */
-    background-size: 300%; /* Large background for smooth animation */
+    color: transparent; 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    background-size: 300%; 
     background-image: linear-gradient(
         45deg,
         rgb(33, 89, 202),
@@ -198,10 +192,9 @@ nav ul li a:hover::after {
         rgb(116, 46, 196),
         rgb(230, 210, 250)
     );
-    animation: rgbEffect 8s infinite linear; /* Smooth gradient animation */
+    animation: rgbEffect 8s infinite linear; 
 }
 
-/* RGB Gradient Animation */
 @keyframes rgbEffect {
     0% {
         background-position: 0% 0%;
