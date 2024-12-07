@@ -46,17 +46,17 @@ nav ul {
 
 nav ul li {
     margin: 0 20px;
-    position: relative; /* Required for positioning the pseudo-element */
+    position: relative; 
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #8208fc; /* Light gray for nav links */
+    color: #8208fc; 
     font-weight: bold;
     font-size: 1rem;
-    text-transform: uppercase; /* Professional look */
-    letter-spacing: 1px; /* Spaced out letters */
-    transition: color 0.3s; /* Smooth hover effect for text color */
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    transition: color 0.3s;
 }
 
 nav ul li a::after {
