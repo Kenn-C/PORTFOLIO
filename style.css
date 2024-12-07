@@ -22,22 +22,20 @@ main::-webkit-scrollbar {
     display: none;
 }
 
-/* Header Styles */
-/* Header Styles */
 header {
-    background-color: #1A0129; /* Deep purple */
+    background-color: #1A0129; 
     padding: 20px;
     position: fixed;
     width: 100%;
     z-index: 10;
     top: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    border-bottom: 2px solid #3A025B; /* Muted border for structure */
-    transition: background-color 0.3s ease; /* Smooth background change on scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    border-bottom: 2px solid #3A025B;
+    transition: background-color 0.3s ease; 
 }
 
 header:hover {
-    background-color: #220135; /* Slightly brighter purple on hover */
+    background-color: #220135; 
 }
 
 nav ul {
@@ -49,42 +47,39 @@ nav ul {
 
 nav ul li {
     margin: 0 20px;
-    position: relative; /* Required for positioning the pseudo-element */
+    position: relative; 
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #8208fc; /* Light gray for nav links */
+    color: #8208fc;
     font-weight: bold;
     font-size: 1rem;
-    text-transform: uppercase; /* Professional look */
-    letter-spacing: 1px; /* Spaced out letters */
-    transition: color 0.3s; /* Smooth hover effect for text color */
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    transition: color 0.3s; 
 }
 
 nav ul li a::after {
     content: "";
     position: absolute;
-    bottom: -5px; /* Position the line just below the text */
+    bottom: -5px; 
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #2369d9; /* Gold color for the line */
-    transition: width 0.3s ease; /* Smooth underline animation */
+    background-color: #2369d9;
+    transition: width 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ae3ff8; /* Gold hover effect for text */
+    color: #ae3ff8;
 }
 
 nav ul li a:hover::after {
-    width: 100%; /* Full-width underline on hover */
+    width: 100%; 
 }
 
 
-
-
-/* Section Styles */
 .scroll-section {
     min-height: 100vh;
     display: flex;
@@ -92,12 +87,12 @@ nav ul li a:hover::after {
     justify-content: flex-start;
     text-align: left;
     padding-left: 5%;
-    color: #BFBFBF; /* Light gray text */
+    color: #BFBFBF; 
 }
 
 #home {
     position: relative;
-    background-color: #11001C; /* Deep purple-black */
+    background-color: #11001C;
     height: 100vh;
     color: #FFFFFF;
 }
@@ -116,10 +111,10 @@ nav ul li a:hover::after {
     font-weight: bold;
     color: transparent;
     background-clip: text;
-    -webkit-background-clip: text; /* Muted gold for name */
+    -webkit-background-clip: text;
     background-size: 200%;
     display: block;
-    border-bottom: 2px solid #8B5B29; /* Subtle underline effect */
+    border-bottom: 2px solid #8B5B29; 
     background-image: linear-gradient(
         45deg,
         rgba(6, 30, 138, 0.875),
@@ -127,10 +122,9 @@ nav ul li a:hover::after {
         rgba(0, 89, 255, 0.779),
         rgb(200, 200, 200)
     );
-    animation: rgbEffect 7s infinite linear; /* Smooth gradient animation */
+    animation: rgbEffect 7s infinite linear; 
 }
 
-/* RGB Gradient Animation */
 @keyframes rgbEffect {
     0% {
         background-position: 0% 0%;
@@ -144,33 +138,31 @@ nav ul li a:hover::after {
 #home .intro .highlight-role {
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(112, 79, 245); /* Neutral light gray */
+    color: rgb(112, 79, 245); 
     background: linear-gradient(to right, #11001C, #3A025B);
     padding: 0.2em 0.5em;
     border-radius: 5px;
-    text-shadow: 1px 1px 2px #000; /* Subtle depth */
+    text-shadow: 1px 1px 2px #000; 
 }
 
-/* Dynamic Role Container */
 #dynamic-role-container {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    height: 3.5 rem; /* Match the highlight-role height */
+    height: 3.5 rem; 
 }
 
-/* Dynamic Role Text */
 #dynamic-role {
     display: inline-block;
-    opacity: 0; /* Start hidden */
-    transition: opacity 0.5s ease-in-out; /* Smooth fade */
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
     font-size: 6rem;
     font-weight: bold;
-    color: #BFBFBF; /* Neutral light gray */
+    color: #BFBFBF; 
     background: linear-gradient(to right, #8B5B29, #220135);
     padding: 0.2em 0.5em;
     border-radius: 3px;
-    text-shadow: 1px 1px 2px #000; /* Subtle depth */
+    text-shadow: 1px 1px 2px #000; 
 }
 
 
@@ -186,14 +178,14 @@ nav ul li a:hover::after {
     }
 }
 
-/* Gradient Effect for Intro Text */
+
 #home .intro p span.gradient-text {
     display: inline-block;
     position: relative;
-    color: transparent; /* Text color is transparent */
-    background-clip: text; /* Clip gradient to text */
-    -webkit-background-clip: text; /* Safari compatibility */
-    background-size: 300%; /* Large background for smooth animation */
+    color: transparent; 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    background-size: 300%; 
     background-image: linear-gradient(
         45deg,
         rgb(33, 89, 202),
@@ -201,10 +193,10 @@ nav ul li a:hover::after {
         rgb(116, 46, 196),
         rgb(230, 210, 250)
     );
-    animation: rgbEffect 8s infinite linear; /* Smooth gradient animation */
+    animation: rgbEffect 8s infinite linear; 
 }
 
-/* RGB Gradient Animation */
+
 @keyframes rgbEffect {
     0% {
         background-position: 0% 0%;
@@ -215,7 +207,6 @@ nav ul li a:hover::after {
 }
 
 
-/* Interactive Bar Graph Container */
 .interactive-bar-graph {
     position: absolute;
     right: 0;
@@ -224,8 +215,8 @@ nav ul li a:hover::after {
     height: 100%;
     padding: 20px;
     background: linear-gradient(to left, rgba(17, 0, 28, 0.8), rgba(17, 0, 28, 0.6), transparent);
-    border-left: 2px solid #11001C; /* Muted gold border */
-    color: #BFBFBF; /* Light gray text */
+    border-left: 2px solid #11001C;
+    color: #BFBFBF; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,8 +230,8 @@ nav ul li a:hover::after {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #837e6e; /* Gold */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+    color: #837e6e;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
 }
 
 /* Bars Container */
@@ -254,12 +245,11 @@ nav ul li a:hover::after {
     justify-content: space-around;
 }
 
-/* Individual Bar */
 .bar {
     position: relative;
     width: 100%;
     height: 20%;
-    background-color: #3A025B; /* Semi-transparent muted gold */
+    background-color: #3A025B; 
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -267,7 +257,7 @@ nav ul li a:hover::after {
 }
 
 .bar:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05); 
 }
 
 /* Bar Fill */
@@ -277,22 +267,21 @@ nav ul li a:hover::after {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #5e4598; /* Gold */
+    background-color: #5e4598; 
     transition: width 1s ease-in-out;
 }
 
-/* Bar Labels */
-/* Bar Labels */
+
 .bar label {
     position: absolute;
     top: -20px;
     left: 10px;
     font-size: 0.8rem;
-    color: #FFC107; /* Gold */
+    color: #FFC107; 
     font-weight: bold;
 }
 
-/* Input Field Container */
+
 .input-container {
     margin-top: 20px;
     display: flex;
@@ -303,16 +292,16 @@ nav ul li a:hover::after {
 
 .input-container label {
     font-size: 1rem;
-    color: #4392e6; /* Gold */
+    color: #4392e6;
 }
 
 .input-container input {
     width: 80%;
     padding: 5px;
-    border: 2px solid #4f207c; /* Muted gold border */
+    border: 2px solid #4f207c; 
     border-radius: 5px;
-    background: #1A0129; /* Deep purple background */
-    color: #40a0f5; /* Light gray text */
+    background: #1A0129; 
+    color: #40a0f5; 
     text-align: center;
 }
 
@@ -320,15 +309,15 @@ nav ul li a:hover::after {
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
-    background: #4b0d81; /* Gold background */
-    color: #11001C; /* Deep purple text */
+    background: #4b0d81; 
+    color: #11001C;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .input-container button:hover {
-    background-color: #1c1e56; /* Brighter gold */
+    background-color: #1c1e56; 
 }
 
 
@@ -342,9 +331,6 @@ nav ul li a:hover::after {
     display: none;
 }
 
-
-
-/* Section Background Colors */
 
 
 
@@ -381,14 +367,14 @@ nav ul li a:hover::after {
     position: relative;
     width: 250px;
     height: 300px;
-    border: 8px solid transparent; /* Transparent border to animate */
+    border: 8px solid transparent; 
     border-radius: 5px;
     outline: 5px solid #000;    
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
-    border-image-slice: 1; /* Enable border image slicing */
-    animation: lightBorder 3s infinite linear; /* Add the border animation */
+    border-image-slice: 1;
+    animation: lightBorder 3s infinite linear; 
 }
 
 .certificate {
@@ -454,7 +440,7 @@ nav ul li a:hover::after {
 }
 
 .overlay-text {
-    color: #FFC107; /* Gold */
+    color: #FFC107; 
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
@@ -465,15 +451,15 @@ nav ul li a:hover::after {
 }
 
 .overlay-text:hover {
-    background-color: #8B5B29; /* Muted gold hover effect */
+    background-color: #8B5B29;
 }
 
 .overlay-preview {
-    color: #FFC107; /* Gold */
+    color: #FFC107;
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 8px 15px;
     border-radius: 5px;
     margin-top: 10px;
@@ -482,16 +468,16 @@ nav ul li a:hover::after {
 }
 
 .overlay-preview:hover {
-    background-color: #8B5B29; /* Muted gold hover effect */
-    transform: scale(1.05); /* Slight zoom effect */
+    background-color: #8B5B29; 
+    transform: scale(1.05); 
 }
 
 .overlay {
     display: flex;
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Space between buttons */
+    gap: 10px; 
 }
 
 
@@ -502,25 +488,20 @@ nav ul li a:hover::after {
 
 
 #projects {
-    background-color: #3A025B; /* Plum */
+    background-color: #3A025B; 
     color: #113a93;
 }
 
 
-
-
-
-/* Section Styling */
-/* Section Styling */
 #skills {
-    background-color: #470b6a; /* Navy Blue */
+    background-color: #470b6a; 
     color: #0c61af;
     padding: 3rem;
     position: relative;
     overflow: hidden;
 }
 
-/* Heading Styling */
+
 .skills-heading {
     position: absolute;
     top: 20px;
@@ -533,7 +514,7 @@ nav ul li a:hover::after {
     padding-left: 15px;
 }
 
-/* Skills Container */
+
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -554,7 +535,6 @@ nav ul li a:hover::after {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
 }
 
-/* Pulsing Animation */
 @keyframes pulse {
     0% {
         box-shadow: 0 0 15px rgba(34, 69, 122, 0.5);
@@ -567,7 +547,6 @@ nav ul li a:hover::after {
     }
 }
 
-/* Individual Skill Cards */
 .skill-card {
     background: linear-gradient(145deg, #4a0b66, #520d73);
     border: 2px solid #181053;
@@ -594,7 +573,7 @@ nav ul li a:hover::after {
     background: linear-gradient(145deg, #45247e, #4a0b66);
 }
 
-/* Card Content */
+
 .skill-card img {
     width: 80px;
     height: 80px;
@@ -612,7 +591,7 @@ nav ul li a:hover::after {
     color: #131211;
 }
 
-/* Animation for Fade-in Effect */
+
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
@@ -620,11 +599,8 @@ nav ul li a:hover::after {
 
 
 
-
-
-/* Main Section Styling */
 #contacts {
-    background-color: #551f74; /* Navy Blue */
+    background-color: #551f74; 
     color: #1156b6;
     padding: 60px 20px;
     text-align: center;
@@ -639,7 +615,6 @@ nav ul li a:hover::after {
     gap: 30px;
 }
 
-/* Header Text Styling */
 .contacts-text h2 {
     font-size: 2.8rem;
     margin-bottom: 10px;
@@ -651,7 +626,6 @@ nav ul li a:hover::after {
     max-width: 700px;
 }
 
-/* Contact Links Styling */
 .contacts-links {
     display: flex;
     gap: 20px;
@@ -691,7 +665,7 @@ nav ul li a:hover::after {
     transform: rotateY(360deg);
 }
 
-/* Icon & Label Styling */
+
 .contact-icon {
     font-size: 2.5rem;
     display: block;
@@ -703,7 +677,6 @@ nav ul li a:hover::after {
     color: #551f74;
 }
 
-/* Background Animation */
 .contact-card:before {
     content: '';
     position: absolute;
@@ -752,7 +725,6 @@ nav ul li a:hover::after {
     color: #230f71;
 }
 
-/* Adjust for responsiveness */
 @media (max-width: 768px) {
     .download-cv-btn {
         padding: 10px 20px;
@@ -765,7 +737,6 @@ nav ul li a:hover::after {
 }
 
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .contacts-links {
         gap: 10px;
@@ -786,11 +757,11 @@ nav ul li a:hover::after {
 }
 
 
-/* Headings and Paragraphs */
+
 h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    border-bottom: 3px solid #BFBFBF; /* Light gray underlines */
+    border-bottom: 3px solid #BFBFBF; 
     padding-bottom: 10px;
 }
 
