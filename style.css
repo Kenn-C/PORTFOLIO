@@ -371,14 +371,14 @@ nav ul li a:hover::after {
     position: relative;
     width: 250px;
     height: 300px;
-    border: 8px solid transparent; /* Transparent border to animate */
+    border: 8px solid transparent; 
     border-radius: 5px;
     outline: 5px solid #000;    
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
-    border-image-slice: 1; /* Enable border image slicing */
-    animation: lightBorder 3s infinite linear; /* Add the border animation */
+    border-image-slice: 1;
+    animation: lightBorder 3s infinite linear;
 }
 
 .certificate {
@@ -478,10 +478,10 @@ nav ul li a:hover::after {
 
 .overlay {
     display: flex;
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Space between buttons */
+    gap: 10px;
 }
 
 
@@ -492,25 +492,21 @@ nav ul li a:hover::after {
 
 
 #projects {
-    background-color: #3A025B; /* Plum */
+    background-color: #3A025B;
     color: #113a93;
 }
 
 
 
 
-
-/* Section Styling */
-/* Section Styling */
 #skills {
-    background-color: #470b6a; /* Navy Blue */
+    background-color: #470b6a;
     color: #0c61af;
     padding: 3rem;
     position: relative;
     overflow: hidden;
 }
 
-/* Heading Styling */
 .skills-heading {
     position: absolute;
     top: 20px;
@@ -523,7 +519,6 @@ nav ul li a:hover::after {
     padding-left: 15px;
 }
 
-/* Skills Container */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -544,7 +539,6 @@ nav ul li a:hover::after {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
 }
 
-/* Pulsing Animation */
 @keyframes pulse {
     0% {
         box-shadow: 0 0 15px rgba(34, 69, 122, 0.5);
@@ -557,7 +551,6 @@ nav ul li a:hover::after {
     }
 }
 
-/* Individual Skill Cards */
 .skill-card {
     background: linear-gradient(145deg, #4a0b66, #520d73);
     border: 2px solid #181053;
@@ -577,14 +570,14 @@ nav ul li a:hover::after {
 .skill-card:nth-child(3) { animation-delay: 0.6s; }
 .skill-card:nth-child(4) { animation-delay: 0.8s; }
 
-/* Hover Effect */
+
 .skill-card:hover {
     transform: rotate(3deg) scale(1.1);
     box-shadow: 0 12px 25px rgba(33, 89, 145, 0.5);
     background: linear-gradient(145deg, #45247e, #4a0b66);
 }
 
-/* Card Content */
+
 .skill-card img {
     width: 80px;
     height: 80px;
@@ -602,7 +595,6 @@ nav ul li a:hover::after {
     color: #131211;
 }
 
-/* Animation for Fade-in Effect */
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
@@ -612,9 +604,9 @@ nav ul li a:hover::after {
 
 
 
-/* Main Section Styling */
+
 #contacts {
-    background-color: #551f74; /* Navy Blue */
+    background-color: #551f74; 
     color: #1156b6;
     padding: 60px 20px;
     text-align: center;
@@ -629,7 +621,7 @@ nav ul li a:hover::after {
     gap: 30px;
 }
 
-/* Header Text Styling */
+
 .contacts-text h2 {
     font-size: 2.8rem;
     margin-bottom: 10px;
@@ -641,7 +633,7 @@ nav ul li a:hover::after {
     max-width: 700px;
 }
 
-/* Contact Links Styling */
+
 .contacts-links {
     display: flex;
     gap: 20px;
@@ -681,7 +673,6 @@ nav ul li a:hover::after {
     transform: rotateY(360deg);
 }
 
-/* Icon & Label Styling */
 .contact-icon {
     font-size: 2.5rem;
     display: block;
@@ -693,7 +684,7 @@ nav ul li a:hover::after {
     color: #551f74;
 }
 
-/* Background Animation */
+
 .contact-card:before {
     content: '';
     position: absolute;
@@ -742,7 +733,6 @@ nav ul li a:hover::after {
     color: #230f71;
 }
 
-/* Adjust for responsiveness */
 @media (max-width: 768px) {
     .download-cv-btn {
         padding: 10px 20px;
@@ -755,7 +745,6 @@ nav ul li a:hover::after {
 }
 
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .contacts-links {
         gap: 10px;
@@ -776,11 +765,11 @@ nav ul li a:hover::after {
 }
 
 
-/* Headings and Paragraphs */
+
 h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    border-bottom: 3px solid #BFBFBF; /* Light gray underlines */
+    border-bottom: 3px solid #BFBFBF; \
     padding-bottom: 10px;
 }
 
