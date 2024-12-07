@@ -79,9 +79,6 @@ nav ul li a:hover::after {
 }
 
 
-
-
-/* Section Styles */
 .scroll-section {
     min-height: 100vh;
     display: flex;
@@ -113,10 +110,10 @@ nav ul li a:hover::after {
     font-weight: bold;
     color: transparent;
     background-clip: text;
-    -webkit-background-clip: text; /* Muted gold for name */
+    -webkit-background-clip: text; 
     background-size: 200%;
     display: block;
-    border-bottom: 2px solid #8B5B29; /* Subtle underline effect */
+    border-bottom: 2px solid #8B5B29;
     background-image: linear-gradient(
         45deg,
         rgba(6, 30, 138, 0.875),
@@ -214,8 +211,8 @@ nav ul li a:hover::after {
     height: 100%;
     padding: 20px;
     background: linear-gradient(to left, rgba(17, 0, 28, 0.8), rgba(17, 0, 28, 0.6), transparent);
-    border-left: 2px solid #11001C; /* Muted gold border */
-    color: #BFBFBF; /* Light gray text */
+    border-left: 2px solid #11001C; 
+    color: #BFBFBF;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,7 +227,7 @@ nav ul li a:hover::after {
     font-weight: bold;
     margin-bottom: 20px;
     color: #837e6e; /* Gold */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 /* Bars Container */
@@ -244,12 +241,11 @@ nav ul li a:hover::after {
     justify-content: space-around;
 }
 
-/* Individual Bar */
 .bar {
     position: relative;
     width: 100%;
     height: 20%;
-    background-color: #3A025B; /* Semi-transparent muted gold */
+    background-color: #3A025B;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -257,10 +253,9 @@ nav ul li a:hover::after {
 }
 
 .bar:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05);
 }
 
-/* Bar Fill */
 .bar-fill {
     position: absolute;
     bottom: 0;
@@ -271,18 +266,15 @@ nav ul li a:hover::after {
     transition: width 1s ease-in-out;
 }
 
-/* Bar Labels */
-/* Bar Labels */
 .bar label {
     position: absolute;
     top: -20px;
     left: 10px;
     font-size: 0.8rem;
-    color: #FFC107; /* Gold */
+    color: #FFC107; 
     font-weight: bold;
 }
 
-/* Input Field Container */
 .input-container {
     margin-top: 20px;
     display: flex;
@@ -293,16 +285,16 @@ nav ul li a:hover::after {
 
 .input-container label {
     font-size: 1rem;
-    color: #4392e6; /* Gold */
+    color: #4392e6;
 }
 
 .input-container input {
     width: 80%;
     padding: 5px;
-    border: 2px solid #4f207c; /* Muted gold border */
+    border: 2px solid #4f207c;
     border-radius: 5px;
-    background: #1A0129; /* Deep purple background */
-    color: #40a0f5; /* Light gray text */
+    background: #1A0129;
+    color: #40a0f5;
     text-align: center;
 }
 
@@ -310,15 +302,15 @@ nav ul li a:hover::after {
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
-    background: #4b0d81; /* Gold background */
-    color: #11001C; /* Deep purple text */
+    background: #4b0d81;
+    color: #11001C;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .input-container button:hover {
-    background-color: #1c1e56; /* Brighter gold */
+    background-color: #1c1e56;
 }
 
 
