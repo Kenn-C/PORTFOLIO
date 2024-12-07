@@ -503,7 +503,7 @@ nav ul li a:hover::after {
 
 #projects {
     background-color: #3A025B; /* Plum */
-    color: #FFC107;
+    color: #113a93;
 }
 
 
@@ -720,6 +720,50 @@ nav ul li a:hover::after {
 .contact-card:hover:before {
     opacity: 0.4;
 }
+
+.download-cv {
+    margin-top: 30px;
+}
+
+.download-cv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1f6871;
+    background-color: #42216a;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.download-cv-btn:hover {
+    background-color: #5b073e;
+    transform: scale(1.1);
+}
+
+.download-icon {
+    font-size: 1.5rem;
+    color: #230f71;
+}
+
+/* Adjust for responsiveness */
+@media (max-width: 768px) {
+    .download-cv-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .download-icon {
+        font-size: 1.2rem;
+    }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
