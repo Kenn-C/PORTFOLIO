@@ -62,20 +62,20 @@ nav ul li a {
 nav ul li a::after {
     content: "";
     position: absolute;
-    bottom: -5px; /* Position the line just below the text */
+    bottom: -5px; 
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #2369d9; /* Gold color for the line */
-    transition: width 0.3s ease; /* Smooth underline animation */
+    background-color: #2369d9; 
+    transition: width 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ae3ff8; /* Gold hover effect for text */
+    color: #ae3ff8; 
 }
 
 nav ul li a:hover::after {
-    width: 100%; /* Full-width underline on hover */
+    width: 100%;
 }
 
 
