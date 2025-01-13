@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">KC</div> 
+        <div class="logo"></div> 
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -115,8 +115,39 @@
         
         
         <section id="projects" class="scroll-section">
-            <h2>Projects</h2>
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <div class="project-live-preview">
+                        <video autoplay loop muted playsinline class="live-project-video">
+                            <source src="static/img/background/CURRENCY_Sample.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="project-overlay">
+                            <p class="overlay-text">Live Currency Exchange Dashboard</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>USD Exchange Dashboard</h3>
+                        <p>A dynamic web application providing real-time currency exchange rates, enabling users to monitor and compare currency values efficiently. Built with Python and Flask, integrating external APIs for up-to-date information.</p>
+                        <div class="project-buttons">
+                            <a href="https://kenc.pythonanywhere.com/" class="project-link" target="_blank">View Website</a>
+                            <a href="static/project/source code.txt" class="project-link-alt" download >Download Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional projects can be added here in the same structure -->
+            </div>
         </section>
+        
+        
+        
+        
+          
+          
+          
+          
+          
 
 
         
@@ -155,39 +186,56 @@
 
         <section id="contacts" class="scroll-section">
             <div class="contacts-container">
-                <div class="contacts-text">
-                    <h2>Contacts</h2>
-                    <p>Reach out to me via the platforms below. I’d love to connect!</p>
+              <div class="contacts-text">
+                <h2>Contacts</h2>
+                <p>Reach out to me via the platforms below. I’d love to connect!</p>
+              </div>
+              <div class="contacts-links">
+                <div class="contact-card">
+                  <a href="mailto:cuetokenneth31@gmail.com" target="_blank">
+                    <span class="contact-icon">&#x2709;</span>
+                    <span class="contact-label">Gmail</span>
+                  </a>
                 </div>
-                <div class="contacts-links">
-                    <div class="contact-card">
-                        <a href="mailto:cuetokenneth31@gmail.com" target="_blank">
-                            <span class="contact-icon">&#x2709;</span>
-                            <span class="contact-label">Gmail</span>
-                        </a>
-                    </div>
-                    <div class="contact-card">
-                        <a href="https://www.linkedin.com/in/kenneth-cueto-7776702b6" target="_blank">
-                            <span class="contact-icon">&#x1F465;</span>
-                            <span class="contact-label">LinkedIn</span>
-                        </a>
-                    </div>
-                    <div class="contact-card">
-                        <a href="https://www.credly.com/users/kenneth-cueto.89f47e64" target="_blank">
-                            <span class="contact-icon">&#x1F4DC;</span>
-                            <span class="contact-label">Credly</span>
-                        </a>
-                    </div>
+                <div class="contact-card">
+                  <a href="https://www.linkedin.com/in/kenneth-cueto-7776702b6" target="_blank">
+                    <span class="contact-icon">&#x1F465;</span>
+                    <span class="contact-label">LinkedIn</span>
+                  </a>
                 </div>
-                <div class="download-cv">
-                    <a href="path-to-your-cv.pdf" download class="download-cv-btn">
-                        <span class="download-icon">&#x1F4BE;</span>
-                        Download CV
-                    </a>
+                <div class="contact-card">
+                  <a href="https://www.credly.com/users/kenneth-cueto.89f47e64" target="_blank">
+                    <span class="contact-icon">&#x1F4DC;</span>
+                    <span class="contact-label">Credly</span>
+                  </a>
                 </div>
-
+              </div>
+              <div class="download-cv">
+                <a href="path-to-your-cv.pdf" download class="download-cv-btn">
+                  <span class="download-icon">&#x1F4BE;</span>
+                  Download CV
+                </a>
+              </div>
+          
+              <!-- Modal Button -->
+              <div class="modal-button-container">
+                <button id="open-modal" class="modal-btn">About This Portfolio</button>
+              </div>
+          
+              <!-- Modal Structure -->
+              <div id="portfolio-modal" class="modal hidden">
+                <div class="modal-content">
+                  <span id="close-modal" class="close-btn">&times;</span>
+                  <h2>Dedication</h2>
+                  <p>This portfolio is a culmination of passion, learning, and creativity. It's designed to showcase my skills, dedication, and commitment to excellence in all I do. Thank you for visiting!</p>
+                  <div class="modal-buttons">
+                    <a href="https://github.com/Kenn-C/PORTFOLIO.git" target="_blank" class="modal-action-btn">View Source Code on GitHub</a>
+                    <a href="static/project/source_web.zip" download class="modal-action-btn"><> Source Code</a>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </section>
         
         
 

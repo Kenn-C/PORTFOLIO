@@ -352,7 +352,7 @@ nav ul li a:hover::after {
     padding: 10px; 
     background-color: #220135; 
     border-radius: 5px; 
-    z-index: 10;
+    z-index: 0;
 }
 
 .accomplishment-container {
@@ -451,7 +451,7 @@ nav ul li a:hover::after {
 }
 
 .overlay-text:hover {
-    background-color: #8B5B29;
+    background-color: #9399e0;
 }
 
 .overlay-preview {
@@ -487,10 +487,185 @@ nav ul li a:hover::after {
 
 
 
+/* Updated Styling for Projects Section */
 #projects {
-    background-color: #3A025B; 
+    background: linear-gradient(135deg, #3A025B, #29003e);
     color: #113a93;
+    padding: 100px 20px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
+.section-title {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-left: 5px solid #612397;
+    padding-left: 15px;
+}
+
+.projects-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 80px;
+    margin-left: 60px;
+    row-gap: 30px;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-live-preview {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-bottom: 4px solid #3A025B;
+}
+
+.live-project-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-item:hover .live-project-video {
+    transform: scale(1.1);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(58, 2, 91, 0.8));
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.4s ease;
+}
+
+.project-item:hover .project-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    color: #7b42a1;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 10px;
+}
+
+.project-content {
+    padding: 25px;
+    text-align: center;
+    background: #854dd3;
+}
+
+.project-content h3 {
+    color: #3A025B;
+    margin-bottom: 15px;
+    font-size: 1.9em;
+}
+
+.project-content p {
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.8;
+    color: #ac99b7;
+}
+
+/* Project Buttons */
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.project-link, .project-link-alt {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Main Button - View Website */
+.project-link {
+    background: linear-gradient(135deg, #3A025B, #29003e);
+    color: #ac99b7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-link:hover {
+    background-color: #1c0034;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Alternate Button - View Source Code */
+.project-link-alt {
+    background: linear-gradient(135deg, #113a93, #081b58);
+    color: #ac99b7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-link-alt:hover {
+    background-color: #081b58;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+  
+  
+  
+  
+
+
 
 
 #skills {
@@ -622,7 +797,7 @@ nav ul li a:hover::after {
 
 .contacts-text p {
     font-size: 1.2rem;
-    color: #f0e6ff;
+    color: #9084a1;
     max-width: 700px;
 }
 
@@ -724,6 +899,101 @@ nav ul li a:hover::after {
     font-size: 1.5rem;
     color: #230f71;
 }
+
+.modal-button-container {
+    margin-top: 20px;
+  }
+  
+.modal-btn {
+    background-color: #42216a;
+    color: #1f6871;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+.modal-btn:hover {
+    background-color: #5b073e;
+    transform: scale(1.1);
+  }
+  
+.hidden {
+    display: none;
+  }
+  
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #927abb;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+.modal-content {
+    text-align: center;
+  }
+  
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #5b073e;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+.close-btn:hover {
+    color: #42216a;
+  }
+  
+.modal h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+.modal p {
+    font-size: 1.1rem;
+    color: #42216a;
+    margin-bottom: 20px;
+  }
+  
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+.modal-action-btn {
+    background-color: #8d50d8;
+    color: #769cbd;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+.modal-action-btn:hover {
+    background-color: #5b073e;
+    transform: scale(1.1);
+  }
+
+
+
 
 @media (max-width: 768px) {
     .download-cv-btn {
