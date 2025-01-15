@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             barFill.style.width = randomValuePercent;
 
   
-            barFill.style.backgroundColor = randomValue > 70 ? '#6808f8' : '#5e4598';
+            barFill.style.backgroundColor = randomValue > 70 ? '#e8e8e8' : '#afafaf';
         });
     }
 
